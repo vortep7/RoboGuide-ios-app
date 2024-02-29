@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		1710DE1D2B90D4B0007739D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE1C2B90D4B0007739D4 /* AppDelegate.swift */; };
 		1710DE1F2B90D4B0007739D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE1E2B90D4B0007739D4 /* SceneDelegate.swift */; };
-		1710DE212B90D4B0007739D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE202B90D4B0007739D4 /* ViewController.swift */; };
+		1710DE212B90D4B0007739D4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE202B90D4B0007739D4 /* MainViewController.swift */; };
 		1710DE262B90D4B1007739D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1710DE252B90D4B1007739D4 /* Assets.xcassets */; };
 		1710DE292B90D4B1007739D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1710DE272B90D4B1007739D4 /* LaunchScreen.storyboard */; };
 		1710DE342B90D4B1007739D4 /* MechatronicsComponentsGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE332B90D4B1007739D4 /* MechatronicsComponentsGuideTests.swift */; };
 		1710DE3E2B90D4B1007739D4 /* MechatronicsComponentsGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE3D2B90D4B1007739D4 /* MechatronicsComponentsGuideUITests.swift */; };
 		1710DE402B90D4B1007739D4 /* MechatronicsComponentsGuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE3F2B90D4B1007739D4 /* MechatronicsComponentsGuideUITestsLaunchTests.swift */; };
+		1710DE522B90DBC9007739D4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE512B90DBC9007739D4 /* MainView.swift */; };
+		1710DE542B90EFCF007739D4 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE532B90EFCF007739D4 /* InfoViewController.swift */; };
+		1710DE582B90F3C8007739D4 /* NetworkJSONService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE572B90F3C8007739D4 /* NetworkJSONService.swift */; };
+		1710DE5B2B90F3E3007739D4 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE5A2B90F3E3007739D4 /* NetworkErrors.swift */; };
+		1710DE5D2B910BD7007739D4 /* NetworkImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE5C2B910BD7007739D4 /* NetworkImageService.swift */; };
+		1710DE5F2B910EF5007739D4 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE5E2B910EF5007739D4 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,7 @@
 		1710DE192B90D4B0007739D4 /* MechatronicsComponentsGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MechatronicsComponentsGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1710DE1C2B90D4B0007739D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1710DE1E2B90D4B0007739D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1710DE202B90D4B0007739D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1710DE202B90D4B0007739D4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1710DE252B90D4B1007739D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1710DE282B90D4B1007739D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1710DE2A2B90D4B1007739D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		1710DE392B90D4B1007739D4 /* MechatronicsComponentsGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MechatronicsComponentsGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1710DE3D2B90D4B1007739D4 /* MechatronicsComponentsGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechatronicsComponentsGuideUITests.swift; sourceTree = "<group>"; };
 		1710DE3F2B90D4B1007739D4 /* MechatronicsComponentsGuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechatronicsComponentsGuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1710DE512B90DBC9007739D4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1710DE532B90EFCF007739D4 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		1710DE572B90F3C8007739D4 /* NetworkJSONService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkJSONService.swift; sourceTree = "<group>"; };
+		1710DE5A2B90F3E3007739D4 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		1710DE5C2B910BD7007739D4 /* NetworkImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageService.swift; sourceTree = "<group>"; };
+		1710DE5E2B910EF5007739D4 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,12 @@
 		1710DE1B2B90D4B0007739D4 /* MechatronicsComponentsGuide */ = {
 			isa = PBXGroup;
 			children = (
-				1710DE1C2B90D4B0007739D4 /* AppDelegate.swift */,
-				1710DE1E2B90D4B0007739D4 /* SceneDelegate.swift */,
-				1710DE202B90D4B0007739D4 /* ViewController.swift */,
-				1710DE252B90D4B1007739D4 /* Assets.xcassets */,
-				1710DE272B90D4B1007739D4 /* LaunchScreen.storyboard */,
-				1710DE2A2B90D4B1007739D4 /* Info.plist */,
+				1710DE552B90F3AE007739D4 /* Service */,
+				1710DE502B90DB84007739D4 /* Settings */,
+				1710DE4F2B90DB48007739D4 /* ApplicationConfigurations */,
+				1710DE4E2B90DB3F007739D4 /* Models */,
+				1710DE4D2B90DB38007739D4 /* Controllers */,
+				1710DE4C2B90DB2C007739D4 /* Views */,
 			);
 			path = MechatronicsComponentsGuide;
 			sourceTree = "<group>";
@@ -122,6 +134,68 @@
 				1710DE3F2B90D4B1007739D4 /* MechatronicsComponentsGuideUITestsLaunchTests.swift */,
 			);
 			path = MechatronicsComponentsGuideUITests;
+			sourceTree = "<group>";
+		};
+		1710DE4C2B90DB2C007739D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1710DE512B90DBC9007739D4 /* MainView.swift */,
+				1710DE5E2B910EF5007739D4 /* InfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1710DE4D2B90DB38007739D4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1710DE202B90D4B0007739D4 /* MainViewController.swift */,
+				1710DE532B90EFCF007739D4 /* InfoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1710DE4E2B90DB3F007739D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1710DE4F2B90DB48007739D4 /* ApplicationConfigurations */ = {
+			isa = PBXGroup;
+			children = (
+				1710DE1E2B90D4B0007739D4 /* SceneDelegate.swift */,
+				1710DE1C2B90D4B0007739D4 /* AppDelegate.swift */,
+			);
+			path = ApplicationConfigurations;
+			sourceTree = "<group>";
+		};
+		1710DE502B90DB84007739D4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1710DE2A2B90D4B1007739D4 /* Info.plist */,
+				1710DE272B90D4B1007739D4 /* LaunchScreen.storyboard */,
+				1710DE252B90D4B1007739D4 /* Assets.xcassets */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1710DE552B90F3AE007739D4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1710DE562B90F3B4007739D4 /* NetworkService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1710DE562B90F3B4007739D4 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				1710DE572B90F3C8007739D4 /* NetworkJSONService.swift */,
+				1710DE5A2B90F3E3007739D4 /* NetworkErrors.swift */,
+				1710DE5C2B910BD7007739D4 /* NetworkImageService.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +328,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1710DE212B90D4B0007739D4 /* ViewController.swift in Sources */,
+				1710DE212B90D4B0007739D4 /* MainViewController.swift in Sources */,
+				1710DE522B90DBC9007739D4 /* MainView.swift in Sources */,
+				1710DE5D2B910BD7007739D4 /* NetworkImageService.swift in Sources */,
 				1710DE1D2B90D4B0007739D4 /* AppDelegate.swift in Sources */,
+				1710DE5B2B90F3E3007739D4 /* NetworkErrors.swift in Sources */,
 				1710DE1F2B90D4B0007739D4 /* SceneDelegate.swift in Sources */,
+				1710DE582B90F3C8007739D4 /* NetworkJSONService.swift in Sources */,
+				1710DE5F2B910EF5007739D4 /* InfoView.swift in Sources */,
+				1710DE542B90EFCF007739D4 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +512,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z96X7GW9YS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MechatronicsComponentsGuide/Info.plist;
+				INFOPLIST_FILE = MechatronicsComponentsGuide/Settings/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -459,7 +539,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z96X7GW9YS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MechatronicsComponentsGuide/Info.plist;
+				INFOPLIST_FILE = MechatronicsComponentsGuide/Settings/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
