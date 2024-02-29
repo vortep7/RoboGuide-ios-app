@@ -21,8 +21,9 @@ class InfoView: UIView {
     
     private let myLabel: UILabel = {
         let label = UILabel()
-        label.text = "Всем привет!"
-        label.textColor = .white
+        label.font = .systemFont(ofSize: 14)
+        label.text = "Какой вы котик сегодня :3"
+        label.textColor = .systemPink
         return label
     }()
     
@@ -31,10 +32,10 @@ class InfoView: UIView {
     func constraintForMyLabel() {
         myLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            myLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 20),
-            myLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -600),
-            myLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 60),
-            myLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -60),
+            myLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 500),
+            myLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -200),
+            myLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 200),
+            myLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
         ])
     }
     

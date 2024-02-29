@@ -28,7 +28,7 @@ extension MainViewController {
     }
     
     @objc func actionForSecondButton() {
-        let nextController = InfoViewController()
+        let nextController = ReferencesViewController()
         navigationController?.pushViewController(nextController, animated: true)
     }
     

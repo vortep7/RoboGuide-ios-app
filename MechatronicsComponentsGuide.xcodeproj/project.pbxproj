@@ -21,6 +21,10 @@
 		1710DE5B2B90F3E3007739D4 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE5A2B90F3E3007739D4 /* NetworkErrors.swift */; };
 		1710DE5D2B910BD7007739D4 /* NetworkImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE5C2B910BD7007739D4 /* NetworkImageService.swift */; };
 		1710DE5F2B910EF5007739D4 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE5E2B910EF5007739D4 /* InfoView.swift */; };
+		1710DE622B91235B007739D4 /* ReferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE612B91235B007739D4 /* ReferencesViewController.swift */; };
+		1710DE642B912482007739D4 /* ReferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE632B912482007739D4 /* ReferencesView.swift */; };
+		1710DE682B91261A007739D4 /* DataForCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE672B91261A007739D4 /* DataForCells.swift */; };
+		1710DE6A2B912718007739D4 /* CellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE692B912718007739D4 /* CellConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		1710DE5A2B90F3E3007739D4 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		1710DE5C2B910BD7007739D4 /* NetworkImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageService.swift; sourceTree = "<group>"; };
 		1710DE5E2B910EF5007739D4 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		1710DE612B91235B007739D4 /* ReferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencesViewController.swift; sourceTree = "<group>"; };
+		1710DE632B912482007739D4 /* ReferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencesView.swift; sourceTree = "<group>"; };
+		1710DE672B91261A007739D4 /* DataForCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataForCells.swift; sourceTree = "<group>"; };
+		1710DE692B912718007739D4 /* CellConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +149,8 @@
 			children = (
 				1710DE512B90DBC9007739D4 /* MainView.swift */,
 				1710DE5E2B910EF5007739D4 /* InfoView.swift */,
+				1710DE632B912482007739D4 /* ReferencesView.swift */,
+				1710DE692B912718007739D4 /* CellConfig.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -150,6 +160,7 @@
 			children = (
 				1710DE202B90D4B0007739D4 /* MainViewController.swift */,
 				1710DE532B90EFCF007739D4 /* InfoViewController.swift */,
+				1710DE612B91235B007739D4 /* ReferencesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -157,6 +168,7 @@
 		1710DE4E2B90DB3F007739D4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1710DE672B91261A007739D4 /* DataForCells.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -332,11 +344,15 @@
 				1710DE522B90DBC9007739D4 /* MainView.swift in Sources */,
 				1710DE5D2B910BD7007739D4 /* NetworkImageService.swift in Sources */,
 				1710DE1D2B90D4B0007739D4 /* AppDelegate.swift in Sources */,
+				1710DE682B91261A007739D4 /* DataForCells.swift in Sources */,
 				1710DE5B2B90F3E3007739D4 /* NetworkErrors.swift in Sources */,
 				1710DE1F2B90D4B0007739D4 /* SceneDelegate.swift in Sources */,
+				1710DE622B91235B007739D4 /* ReferencesViewController.swift in Sources */,
 				1710DE582B90F3C8007739D4 /* NetworkJSONService.swift in Sources */,
 				1710DE5F2B910EF5007739D4 /* InfoView.swift in Sources */,
+				1710DE642B912482007739D4 /* ReferencesView.swift in Sources */,
 				1710DE542B90EFCF007739D4 /* InfoViewController.swift in Sources */,
+				1710DE6A2B912718007739D4 /* CellConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
