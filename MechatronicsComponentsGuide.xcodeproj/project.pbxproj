@@ -28,6 +28,7 @@
 		1710DE6C2B91AD9F007739D4 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE6B2B91AD9F007739D4 /* GeneralViewController.swift */; };
 		1710DE6E2B91B940007739D4 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE6D2B91B940007739D4 /* GeneralView.swift */; };
 		1710DE702B91C986007739D4 /* DataForCollection .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE6F2B91C986007739D4 /* DataForCollection .swift */; };
+		1710DE732B91E82F007739D4 /* abosanova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1710DE722B91E82F007739D4 /* abosanova.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		1710DE6B2B91AD9F007739D4 /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		1710DE6D2B91B940007739D4 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
 		1710DE6F2B91C986007739D4 /* DataForCollection .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataForCollection .swift"; sourceTree = "<group>"; };
+		1710DE722B91E82F007739D4 /* abosanova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = abosanova.ttf; path = ../../../../../../Downloads/a_BosaNova/abosanova.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 		1710DE502B90DB84007739D4 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				1710DE712B91E73B007739D4 /* Fonts */,
 				1710DE2A2B90D4B1007739D4 /* Info.plist */,
 				1710DE272B90D4B1007739D4 /* LaunchScreen.storyboard */,
 				1710DE252B90D4B1007739D4 /* Assets.xcassets */,
@@ -217,6 +220,14 @@
 				1710DE5C2B910BD7007739D4 /* NetworkImageService.swift */,
 			);
 			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		1710DE712B91E73B007739D4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1710DE722B91E82F007739D4 /* abosanova.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1710DE292B90D4B1007739D4 /* LaunchScreen.storyboard in Resources */,
+				1710DE732B91E82F007739D4 /* abosanova.ttf in Resources */,
 				1710DE262B90D4B1007739D4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,6 +14,13 @@ final class GeneralView: UIView {
 //        return collectionView
 //    }()
     
+    private let label: UILabel = {
+        let label = UILabel()
+        label.font = UIFont(name: "abosanova", size: 28)
+        label.text = "USEFUL TOOLS FOR ROBOTS"
+        return label
+    }()
+    
     private let imageView:UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "cuteRobots")
@@ -83,10 +90,21 @@ final class GeneralView: UIView {
         ])
     }
     
+    func constraintForLabel() {
+        label.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            label.topAnchor.constraint(equalTo: self.topAnchor, constant: 100),
+            label.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -600),
+            label.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
+            label.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40)
+        ])
+    }
+    
     func createConstraint() {
         constraintForImageView()
         constraintForButtonCode()
         constraintForButtonConstruct()
+        constraintForLabel()
     }
     
     //MARK: - addViews
@@ -94,6 +112,7 @@ final class GeneralView: UIView {
         self.addSubview(imageView)
         self.addSubview(buttonCode)
         self.addSubview(constructButton)
+        self.addSubview(label)
 //        self.addSubview(collectionView)
         
     }

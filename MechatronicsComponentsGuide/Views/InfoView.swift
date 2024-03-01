@@ -3,6 +3,8 @@ import UIKit
 class InfoView: UIView {
     
     //MARK: - creating UI elements
+
+    
     private var CatImage = UIImage()
     
     private let imageView:UIImageView = {
@@ -77,6 +79,7 @@ class InfoView: UIView {
             generalImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0),
         ])
     }
+    
     
     
     func constraintsForAllView() {

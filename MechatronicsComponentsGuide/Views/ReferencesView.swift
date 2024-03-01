@@ -3,6 +3,13 @@ import UIKit
 class ReferencesView: UIView {
     
     //MARK: - create Ui elements
+    
+    private let newImageView: UIImageView = {
+        let imageViwe = UIImageView()
+        imageViwe.image = UIImage(named: "mephi")
+        return imageViwe
+    }()
+    
     var tableView: UITableView = {
         let tableView = UITableView()
         tableView.layer.cornerRadius = 25
@@ -56,17 +63,33 @@ class ReferencesView: UIView {
         ])
     }
     
+    func constraintForNewImageView() {
+        newImageView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            newImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 60),
+            newImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -650),
+            newImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 120),
+            newImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -120)
+        ])
+    }
+
+    
     func addConstraints() {
         constraintForGeneralViewImage()
         constraintsForTableView()
         constraintForlable()
+        constraintForGeneralViewImage()
+        constraintForNewImageView()
     }
+    
+    
     
     //MARK: - addViewForScreen
     func addViews() {
         self.addSubview(generalViewImage)
         self.addSubview(tableView)
         self.addSubview(lable)
+        self.addSubview(newImageView)
 
     }
     
