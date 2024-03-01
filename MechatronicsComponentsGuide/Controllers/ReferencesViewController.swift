@@ -10,7 +10,7 @@ import UIKit
 class ReferencesViewController: UIViewController {
     let authors = Source.createAuthor()
     var referenceView: ReferencesView {return self.view as! ReferencesView}
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         referenceView.tableView.delegate = self
@@ -22,6 +22,7 @@ class ReferencesViewController: UIViewController {
     override func loadView() {
         self.view = ReferencesView(frame: UIScreen.main.bounds)
     }
+    
 }
 
 
@@ -31,20 +32,24 @@ extension ReferencesViewController: UITableViewDelegate  {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            let alert = UIAlertController(title: "Nice choose!!", message: "Reference: ", preferredStyle: .alert)
-            let actionForAlert = UIAlertAction(title: "Ok,thanks!", style: .cancel)
-            alert.addAction(actionForAlert)
-            present(alert, animated: true, completion: nil)
+            referenceView.webView.frame = view.bounds
+            view.addSubview(referenceView.webView)
+            if let url = URL(string: Video.video.sendReference(index: 1)) {
+                referenceView.webView.load(URLRequest(url: url))
+                
+            }
         case 1:
-            let alert = UIAlertController(title: "Nice choose!!", message: "Reference: ", preferredStyle: .alert)
-            let actionForAlert = UIAlertAction(title: "Ok,thanks!", style: .cancel)
-            alert.addAction(actionForAlert)
-            present(alert, animated: true, completion: nil)
+            referenceView.webView.frame = view.bounds
+            view.addSubview(referenceView.webView)
+            if let url = URL(string: Video.video.sendReference(index: 2)) {
+                referenceView.webView.load(URLRequest(url: url))
+            }
         case 2:
-            let alert = UIAlertController(title: "Nice choose!!", message: "Reference: ", preferredStyle: .alert)
-            let actionForAlert = UIAlertAction(title: "Ok,thanks!", style: .cancel)
-            alert.addAction(actionForAlert)
-            present(alert, animated: true, completion: nil)
+            referenceView.webView.frame = view.bounds
+            view.addSubview(referenceView.webView)
+            if let url = URL(string: Video.video.sendReference(index: 3)) {
+                referenceView.webView.load(URLRequest(url: url))
+            }
         default:
             let alert = UIAlertController(title: "OppS!", message: "No reference", preferredStyle: .alert)
             let actionForAlert = UIAlertAction(title: "cancel", style: .cancel)
@@ -80,7 +85,7 @@ extension ReferencesViewController: UITableViewDataSource {
         headerView.backgroundColor = .systemBlue
         
         let label = UILabel()
-        label.text = "Really useful tools for studing"
+        label.text = "Really useful references for studing"
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 18)
         label.translatesAutoresizingMaskIntoConstraints = false

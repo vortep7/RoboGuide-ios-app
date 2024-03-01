@@ -29,6 +29,10 @@
 		1710DE6E2B91B940007739D4 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE6D2B91B940007739D4 /* GeneralView.swift */; };
 		1710DE702B91C986007739D4 /* DataForCollection .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE6F2B91C986007739D4 /* DataForCollection .swift */; };
 		1710DE732B91E82F007739D4 /* abosanova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1710DE722B91E82F007739D4 /* abosanova.ttf */; };
+		1719A6862B92214900466821 /* ReferenceForVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719A6852B92214900466821 /* ReferenceForVideo.swift */; };
+		1719A6882B924C1200466821 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719A6872B924C1200466821 /* CollectionCell.swift */; };
+		1719A68C2B9255CD00466821 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719A68B2B9255CD00466821 /* ProjectsViewController.swift */; };
+		1719A68E2B9256F100466821 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719A68D2B9256F100466821 /* ProjectsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		1710DE6D2B91B940007739D4 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
 		1710DE6F2B91C986007739D4 /* DataForCollection .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataForCollection .swift"; sourceTree = "<group>"; };
 		1710DE722B91E82F007739D4 /* abosanova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = abosanova.ttf; path = ../../../../../../Downloads/a_BosaNova/abosanova.ttf; sourceTree = "<group>"; };
+		1719A6852B92214900466821 /* ReferenceForVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceForVideo.swift; sourceTree = "<group>"; };
+		1719A6872B924C1200466821 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		1719A68B2B9255CD00466821 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		1719A68D2B9256F100466821 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +168,8 @@
 				1710DE632B912482007739D4 /* ReferencesView.swift */,
 				1710DE692B912718007739D4 /* CellConfig.swift */,
 				1710DE6D2B91B940007739D4 /* GeneralView.swift */,
+				1719A6872B924C1200466821 /* CollectionCell.swift */,
+				1719A68D2B9256F100466821 /* ProjectsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +181,7 @@
 				1710DE532B90EFCF007739D4 /* InfoViewController.swift */,
 				1710DE612B91235B007739D4 /* ReferencesViewController.swift */,
 				1710DE6B2B91AD9F007739D4 /* GeneralViewController.swift */,
+				1719A68B2B9255CD00466821 /* ProjectsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +191,7 @@
 			children = (
 				1710DE672B91261A007739D4 /* DataForCells.swift */,
 				1710DE6F2B91C986007739D4 /* DataForCollection .swift */,
+				1719A6852B92214900466821 /* ReferenceForVideo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -362,13 +374,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1710DE702B91C986007739D4 /* DataForCollection .swift in Sources */,
+				1719A68C2B9255CD00466821 /* ProjectsViewController.swift in Sources */,
 				1710DE212B90D4B0007739D4 /* MainViewController.swift in Sources */,
+				1719A6882B924C1200466821 /* CollectionCell.swift in Sources */,
 				1710DE6C2B91AD9F007739D4 /* GeneralViewController.swift in Sources */,
 				1710DE522B90DBC9007739D4 /* MainView.swift in Sources */,
 				1710DE6E2B91B940007739D4 /* GeneralView.swift in Sources */,
 				1710DE5D2B910BD7007739D4 /* NetworkImageService.swift in Sources */,
 				1710DE1D2B90D4B0007739D4 /* AppDelegate.swift in Sources */,
 				1710DE682B91261A007739D4 /* DataForCells.swift in Sources */,
+				1719A68E2B9256F100466821 /* ProjectsView.swift in Sources */,
+				1719A6862B92214900466821 /* ReferenceForVideo.swift in Sources */,
 				1710DE5B2B90F3E3007739D4 /* NetworkErrors.swift in Sources */,
 				1710DE1F2B90D4B0007739D4 /* SceneDelegate.swift in Sources */,
 				1710DE622B91235B007739D4 /* ReferencesViewController.swift in Sources */,

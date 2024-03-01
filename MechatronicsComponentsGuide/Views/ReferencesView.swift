@@ -1,8 +1,14 @@
 import UIKit
+import WebKit
 
 class ReferencesView: UIView {
     
     //MARK: - create Ui elements
+    
+    lazy var webView: WKWebView = {
+        let webView = WKWebView()
+        return webView
+    }()
     
     private let newImageView: UIImageView = {
         let imageViwe = UIImageView()

@@ -8,28 +8,25 @@ class GeneralViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        generalView.collectionView.dataSource = self
-//        generalView.collectionView.delegate = self
+//        generalView.onAddActionSecondButton = {[weak self] in self?.secondAction()}
+        generalView.onAddActionSecondButton = {[weak self] in self?.secondAction()}
+        
     }
     
     override func loadView() {
         self.view = GeneralView(frame: UIScreen.main.bounds)
     }
-
-}
-
-extension GeneralViewController: UICollectionViewDelegate{
     
+//    @objc func firstAction() {
+//        let nextController =
+//        navigationController?.pushViewController(next, animated: true)
+//    }
+    
+    @objc func secondAction() {
+        let nextController = ProjectsViewController()
+        navigationController?.pushViewController(nextController, animated: true)
+    }
 }
 
-//extension GeneralViewController: UICollectionViewDataSource {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        <#code#>
-//    }
-//    
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        <#code#>
-//    }
-//    
-//    
-//}
+
+

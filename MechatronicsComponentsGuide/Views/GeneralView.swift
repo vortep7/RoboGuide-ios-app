@@ -8,15 +8,9 @@ final class GeneralView: UIView {
     var onAddActionFirstButton: (() -> Void)?
     var onAddActionSecondButton: (() -> Void)?
     
-    //MARK: - create UI elements
-//    let collectionView:UICollectionView = {
-//        let collectionView = UICollectionView()
-//        return collectionView
-//    }()
-    
     private let label: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "abosanova", size: 28)
+        label.font = UIFont(name: "abosanova", size: 25)
         label.text = "USEFUL TOOLS FOR ROBOTS"
         return label
     }()
@@ -34,9 +28,9 @@ final class GeneralView: UIView {
         button.layer.borderColor = UIColor.blue.cgColor
         button.layer.borderWidth = 2
         button.layer.shadowColor = UIColor.gray.cgColor
-        button.layer.shadowOffset = CGSize(width: 5, height: 5) // Смещение тени по горизонтали и вертикали
+        button.layer.shadowOffset = CGSize(width: 5, height: 5)
         button.layer.shadowRadius = 8
-        button.layer.shadowOpacity = 0.8 // Прозрачность тени
+        button.layer.shadowOpacity = 0.8
         button.alpha = 1
         button.setTitle(textForButtons.firstButtonText.rawValue, for: .normal)
         
@@ -50,9 +44,9 @@ final class GeneralView: UIView {
         button.layer.borderColor = UIColor.blue.cgColor
         button.layer.borderWidth = 2
         button.layer.shadowColor = UIColor.gray.cgColor
-        button.layer.shadowOffset = CGSize(width: 5, height: 5) // Смещение тени по горизонтали и вертикали
+        button.layer.shadowOffset = CGSize(width: 5, height: 5)
         button.layer.shadowRadius = 8
-        button.layer.shadowOpacity = 0.8 // Прозрачность тени
+        button.layer.shadowOpacity = 0.8
         button.alpha = 1
         button.setTitle(textForButtons.secondButtonText.rawValue, for: .normal)
         
@@ -113,7 +107,6 @@ final class GeneralView: UIView {
         self.addSubview(buttonCode)
         self.addSubview(constructButton)
         self.addSubview(label)
-//        self.addSubview(collectionView)
         
     }
     
@@ -149,7 +142,7 @@ final class GeneralView: UIView {
 
 //MARK: - enum for button titles
 enum textForButtons: String {
-    case firstButtonText = "CodeForRobots"
-    case secondButtonText = "ComponentsForRobots"
+    case firstButtonText = "MarketForComponents"
+    case secondButtonText = "Project(Beginner-Pro)"
 }
 

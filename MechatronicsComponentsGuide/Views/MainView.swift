@@ -17,6 +17,15 @@ final class MainView: UIView {
     
     //MARK: - creating UI elements
     
+    private let firstLabel:UILabel = {
+        let label = UILabel()
+        label.text = "RoboGuide"
+        label.textColor = .black
+        label.font = UIFont.boldSystemFont(ofSize: 32)
+
+        return label
+    }()
+    
     private let imageView: UIImageView = {
         let mainImage = UIImage(named: "robots")
         let imageView = UIImageView()
@@ -49,7 +58,7 @@ final class MainView: UIView {
         button.setTitle(textForView.firstButton.rawValue, for: .normal)
         return button
     }()
-    private var buttonSecond: UIButton = {
+    private let buttonSecond: UIButton = {
         var button = UIButton()
         button.setTitle(textForView.secondButton.rawValue, for: .normal)
         
@@ -67,7 +76,7 @@ final class MainView: UIView {
         button.layer.cornerRadius = 25
         return button
     }()
-    private var buttonThird: UIButton = {
+    private let buttonThird: UIButton = {
         var button = UIButton()
         button.setTitle(textForView.thirdButton.rawValue, for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -85,6 +94,7 @@ final class MainView: UIView {
         button.layer.cornerRadius = 25
         return button
     }()
+    
     
     //MARK: - Function for actions
     func addActions() {
@@ -112,6 +122,7 @@ final class MainView: UIView {
         self.addSubview(buttonFirst)
         self.addSubview(buttonSecond)
         self.addSubview(buttonThird)
+        self.addSubview(firstLabel)
     }
     
     //MARK: - Function for constraints
@@ -121,8 +132,8 @@ final class MainView: UIView {
         buttonThird.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            buttonFirst.topAnchor.constraint(equalTo: self.topAnchor, constant: 100),
-            buttonFirst.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -700),
+            buttonFirst.topAnchor.constraint(equalTo: self.topAnchor, constant: 70),
+            buttonFirst.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -730),
             buttonFirst.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 240),
             buttonFirst.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -50),
 
@@ -151,10 +162,20 @@ final class MainView: UIView {
     func constraintsForGeneralImage() {
         generalImage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            generalImage.topAnchor.constraint(equalTo: self.topAnchor, constant: 200),
-            generalImage.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -400),
+            generalImage.topAnchor.constraint(equalTo: self.topAnchor, constant: 150),
+            generalImage.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -450),
             generalImage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 80),
             generalImage.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -80),
+        ])
+    }
+    
+    func constraintsForFirstImage() {
+        firstLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            firstLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 310),
+            firstLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -330),
+            firstLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 120),
+            firstLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
         ])
     }
     
@@ -162,6 +183,7 @@ final class MainView: UIView {
         constraintsForButtons()
         constraintsForImageView()
         constraintsForGeneralImage()
+        constraintsForFirstImage()
     }
     
     //MARK: - Init
