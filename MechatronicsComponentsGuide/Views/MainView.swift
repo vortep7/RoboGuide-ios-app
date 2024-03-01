@@ -16,8 +16,9 @@ final class MainView: UIView {
     
     
     //MARK: - creating UI elements
+    
     private let imageView: UIImageView = {
-        let mainImage = UIImage(named: "pinkFon")
+        let mainImage = UIImage(named: "robots")
         let imageView = UIImageView()
         imageView.image = mainImage
         return imageView
@@ -36,12 +37,12 @@ final class MainView: UIView {
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 25
         button.backgroundColor = .lightGray
-        button.setTitle("About me", for: .normal)
+        button.setTitle(textForView.firstButton.rawValue, for: .normal)
         return button
     }()
     private var buttonSecond: UIButton = {
         var button = UIButton()
-        button.setTitle("Useful information", for: .normal)
+        button.setTitle(textForView.secondButton.rawValue, for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.setTitleColor(.cyan, for: .highlighted)
         button.backgroundColor = .systemPink
@@ -50,7 +51,7 @@ final class MainView: UIView {
     }()
     private var buttonThird: UIButton = {
         var button = UIButton()
-        button.setTitle("Select a screen theme", for: .normal)
+        button.setTitle(textForView.thirdButton.rawValue, for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.setTitleColor(.cyan, for: .highlighted)
         button.backgroundColor = .systemPink
@@ -149,4 +150,11 @@ final class MainView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+}
+
+
+enum textForView: String {
+    case firstButton = "About me"
+    case secondButton = "Useful information"
+    case thirdButton = "General view"
 }

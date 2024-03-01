@@ -10,10 +10,18 @@ class InfoView: UIView {
         return imageView
     }()
     
+    private let generalImageView:UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "aboutMe")
+        return imageView
+    }()
+    
     private let textView: UITextView = {
         let textView = UITextView()
         textView.text = ForText.text.rawValue
-        textView.font = UIFont.systemFont(ofSize: 26)
+        textView.font = UIFont.systemFont(ofSize: 20)
+        textView.layer.cornerRadius = 20
+        textView.layer.borderColor = UIColor.magenta.cgColor
         textView.textColor = .black
         textView.setContentOffset(CGPoint.zero, animated: false) // Установка начального смещения
         return textView
@@ -21,8 +29,8 @@ class InfoView: UIView {
     
     private let myLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 14)
-        label.text = "Какой вы котик сегодня :3"
+        label.font = .systemFont(ofSize: 26)
+        label.text = "Cat mood:"
         label.textColor = .systemPink
         return label
     }()
@@ -34,10 +42,11 @@ class InfoView: UIView {
         NSLayoutConstraint.activate([
             myLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 500),
             myLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -200),
-            myLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 200),
-            myLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            myLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+            myLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -150),
         ])
     }
+    
     
     func constraintForTextView() {
         textView.translatesAutoresizingMaskIntoConstraints = false
@@ -55,20 +64,32 @@ class InfoView: UIView {
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 400),
             imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -70),
-            imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -200),
+            imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 150),
+            imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
         ])
     }
+    func constraintForGeneralImageView() {
+        generalImageView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            generalImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0),
+            generalImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0),
+            generalImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0),
+            generalImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0),
+        ])
+    }
+    
     
     func constraintsForAllView() {
         constraintForMyLabel()
         constraintForImageView()
         constraintForTextView()
+        constraintForGeneralImageView()
     }
     
     
     //MARK: - add View components
     func addViews() {
+        self.addSubview(generalImageView)
         self.addSubview(myLabel)
         self.addSubview(imageView)
         self.addSubview(textView)

@@ -21,6 +21,8 @@ final class MainViewController: UIViewController {
     
 }
 
+
+//MARK: - navigation between views
 extension MainViewController {
     @objc func actionForFirstButton() {
         let nextController = InfoViewController()
@@ -33,7 +35,7 @@ extension MainViewController {
     }
     
     @objc func actionForThirdButton() {
-        let nextController = InfoViewController()
+        let nextController = GeneralViewController()
         navigationController?.pushViewController(nextController, animated: true)
     }
 }
