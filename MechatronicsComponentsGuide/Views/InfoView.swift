@@ -23,7 +23,7 @@ class InfoView: UIView {
         textView.layer.cornerRadius = 20
         textView.layer.borderColor = UIColor.magenta.cgColor
         textView.textColor = .black
-        textView.setContentOffset(CGPoint.zero, animated: false) // Установка начального смещения
+        textView.setContentOffset(CGPoint.zero, animated: false) 
         return textView
     }()
     

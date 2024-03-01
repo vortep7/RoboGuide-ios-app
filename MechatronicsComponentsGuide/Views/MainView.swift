@@ -36,6 +36,15 @@ final class MainView: UIView {
         button.setTitleColor(.cyan, for: .highlighted)
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 25
+        
+        button.layer.cornerRadius = 25
+        button.layer.borderColor = UIColor.blue.cgColor
+        button.layer.borderWidth = 2
+        button.layer.shadowColor = UIColor.gray.cgColor
+        button.layer.shadowOffset = CGSize(width: 5, height: 5) // Смещение тени по горизонтали и вертикали
+        button.layer.shadowRadius = 8
+        button.layer.shadowOpacity = 0.8 // Прозрачность тени
+        
         button.backgroundColor = .lightGray
         button.setTitle(textForView.firstButton.rawValue, for: .normal)
         return button
@@ -43,6 +52,15 @@ final class MainView: UIView {
     private var buttonSecond: UIButton = {
         var button = UIButton()
         button.setTitle(textForView.secondButton.rawValue, for: .normal)
+        
+        button.layer.cornerRadius = 25
+        button.layer.borderColor = UIColor.blue.cgColor
+        button.layer.borderWidth = 2
+        button.layer.shadowColor = UIColor.gray.cgColor
+        button.layer.shadowOffset = CGSize(width: 5, height: 5) // Смещение тени по горизонтали и вертикали
+        button.layer.shadowRadius = 8
+        button.layer.shadowOpacity = 0.8 // Прозрачность тени
+        
         button.setTitleColor(.white, for: .normal)
         button.setTitleColor(.cyan, for: .highlighted)
         button.backgroundColor = .systemPink
@@ -53,6 +71,15 @@ final class MainView: UIView {
         var button = UIButton()
         button.setTitle(textForView.thirdButton.rawValue, for: .normal)
         button.setTitleColor(.white, for: .normal)
+        
+        button.layer.cornerRadius = 25
+        button.layer.borderColor = UIColor.blue.cgColor
+        button.layer.borderWidth = 2
+        button.layer.shadowColor = UIColor.gray.cgColor
+        button.layer.shadowOffset = CGSize(width: 5, height: 5) // Смещение тени по горизонтали и вертикали
+        button.layer.shadowRadius = 8
+        button.layer.shadowOpacity = 0.8 // Прозрачность тени
+        
         button.setTitleColor(.cyan, for: .highlighted)
         button.backgroundColor = .systemPink
         button.layer.cornerRadius = 25

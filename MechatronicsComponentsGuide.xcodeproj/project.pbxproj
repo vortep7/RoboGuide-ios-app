@@ -26,6 +26,8 @@
 		1710DE682B91261A007739D4 /* DataForCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE672B91261A007739D4 /* DataForCells.swift */; };
 		1710DE6A2B912718007739D4 /* CellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE692B912718007739D4 /* CellConfig.swift */; };
 		1710DE6C2B91AD9F007739D4 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE6B2B91AD9F007739D4 /* GeneralViewController.swift */; };
+		1710DE6E2B91B940007739D4 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE6D2B91B940007739D4 /* GeneralView.swift */; };
+		1710DE702B91C986007739D4 /* DataForCollection .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE6F2B91C986007739D4 /* DataForCollection .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		1710DE672B91261A007739D4 /* DataForCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataForCells.swift; sourceTree = "<group>"; };
 		1710DE692B912718007739D4 /* CellConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfig.swift; sourceTree = "<group>"; };
 		1710DE6B2B91AD9F007739D4 /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		1710DE6D2B91B940007739D4 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
+		1710DE6F2B91C986007739D4 /* DataForCollection .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataForCollection .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,7 @@
 				1710DE5E2B910EF5007739D4 /* InfoView.swift */,
 				1710DE632B912482007739D4 /* ReferencesView.swift */,
 				1710DE692B912718007739D4 /* CellConfig.swift */,
+				1710DE6D2B91B940007739D4 /* GeneralView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				1710DE672B91261A007739D4 /* DataForCells.swift */,
+				1710DE6F2B91C986007739D4 /* DataForCollection .swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -343,9 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1710DE702B91C986007739D4 /* DataForCollection .swift in Sources */,
 				1710DE212B90D4B0007739D4 /* MainViewController.swift in Sources */,
 				1710DE6C2B91AD9F007739D4 /* GeneralViewController.swift in Sources */,
 				1710DE522B90DBC9007739D4 /* MainView.swift in Sources */,
+				1710DE6E2B91B940007739D4 /* GeneralView.swift in Sources */,
 				1710DE5D2B910BD7007739D4 /* NetworkImageService.swift in Sources */,
 				1710DE1D2B90D4B0007739D4 /* AppDelegate.swift in Sources */,
 				1710DE682B91261A007739D4 /* DataForCells.swift in Sources */,
