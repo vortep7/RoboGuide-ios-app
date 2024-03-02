@@ -47,4 +47,8 @@ extension DataManager:UserDefaultManagerProtocol {
     func set(_ object: Any?, forKey key: Keys) {
         store(object, key: key.rawValue)
     }
+    
+    func remove(_ key: Keys) {
+        userDefaults.removeObject(forKey: key.rawValue)
+    }
 }

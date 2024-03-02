@@ -35,6 +35,7 @@
 		1719A68E2B9256F100466821 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719A68D2B9256F100466821 /* ProjectsView.swift */; };
 		1719A6912B93140D00466821 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1719A6902B93140D00466821 /* Alamofire */; };
 		1719A6932B9326D500466821 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719A6922B9326D500466821 /* DataService.swift */; };
+		1719A6972B932CF200466821 /* WeatherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719A6962B932CF200466821 /* WeatherResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		1719A68B2B9255CD00466821 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		1719A68D2B9256F100466821 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		1719A6922B9326D500466821 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		1719A6962B932CF200466821 /* WeatherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,8 +225,8 @@
 		1710DE552B90F3AE007739D4 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				1719A6952B932C3800466821 /* UserDefaultsService */,
 				1710DE562B90F3B4007739D4 /* NetworkService */,
-				1719A6922B9326D500466821 /* DataService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -235,6 +237,7 @@
 				1710DE572B90F3C8007739D4 /* NetworkJSONService.swift */,
 				1710DE5A2B90F3E3007739D4 /* NetworkErrors.swift */,
 				1710DE5C2B910BD7007739D4 /* NetworkImageService.swift */,
+				1719A6962B932CF200466821 /* WeatherResult.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -245,6 +248,14 @@
 				1710DE722B91E82F007739D4 /* abosanova.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1719A6952B932C3800466821 /* UserDefaultsService */ = {
+			isa = PBXGroup;
+			children = (
+				1719A6922B9326D500466821 /* DataService.swift */,
+			);
+			path = UserDefaultsService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +417,7 @@
 				1710DE582B90F3C8007739D4 /* NetworkJSONService.swift in Sources */,
 				1710DE5F2B910EF5007739D4 /* InfoView.swift in Sources */,
 				1710DE642B912482007739D4 /* ReferencesView.swift in Sources */,
+				1719A6972B932CF200466821 /* WeatherResult.swift in Sources */,
 				1710DE542B90EFCF007739D4 /* InfoViewController.swift in Sources */,
 				1710DE6A2B912718007739D4 /* CellConfig.swift in Sources */,
 			);
