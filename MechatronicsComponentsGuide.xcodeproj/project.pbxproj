@@ -17,7 +17,7 @@
 		1710DE402B90D4B1007739D4 /* MechatronicsComponentsGuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE3F2B90D4B1007739D4 /* MechatronicsComponentsGuideUITestsLaunchTests.swift */; };
 		1710DE522B90DBC9007739D4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE512B90DBC9007739D4 /* MainView.swift */; };
 		1710DE542B90EFCF007739D4 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE532B90EFCF007739D4 /* InfoViewController.swift */; };
-		1710DE582B90F3C8007739D4 /* NetworkJSONService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE572B90F3C8007739D4 /* NetworkJSONService.swift */; };
+		1710DE582B90F3C8007739D4 /*  NetworkAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE572B90F3C8007739D4 /*  NetworkAlamofire.swift */; };
 		1710DE5B2B90F3E3007739D4 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE5A2B90F3E3007739D4 /* NetworkErrors.swift */; };
 		1710DE5D2B910BD7007739D4 /* NetworkImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE5C2B910BD7007739D4 /* NetworkImageService.swift */; };
 		1710DE5F2B910EF5007739D4 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710DE5E2B910EF5007739D4 /* InfoView.swift */; };
@@ -36,6 +36,10 @@
 		1719A6912B93140D00466821 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1719A6902B93140D00466821 /* Alamofire */; };
 		1719A6932B9326D500466821 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719A6922B9326D500466821 /* DataService.swift */; };
 		1719A6972B932CF200466821 /* WeatherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719A6962B932CF200466821 /* WeatherResult.swift */; };
+		1719A6992B93BC3100466821 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 1719A6982B93BC3100466821 /* data.json */; };
+		1719A69B2B93BCBE00466821 /* TestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719A69A2B93BCBE00466821 /* TestsViewController.swift */; };
+		1719A69F2B93BD1100466821 /* TestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719A69E2B93BD1100466821 /* TestsView.swift */; };
+		1719A6A12B93C1C100466821 /* JSONParcing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719A6A02B93C1C100466821 /* JSONParcing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +74,7 @@
 		1710DE3F2B90D4B1007739D4 /* MechatronicsComponentsGuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechatronicsComponentsGuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1710DE512B90DBC9007739D4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		1710DE532B90EFCF007739D4 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		1710DE572B90F3C8007739D4 /* NetworkJSONService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkJSONService.swift; sourceTree = "<group>"; };
+		1710DE572B90F3C8007739D4 /*  NetworkAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " NetworkAlamofire.swift"; sourceTree = "<group>"; };
 		1710DE5A2B90F3E3007739D4 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		1710DE5C2B910BD7007739D4 /* NetworkImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageService.swift; sourceTree = "<group>"; };
 		1710DE5E2B910EF5007739D4 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
@@ -88,6 +92,10 @@
 		1719A68D2B9256F100466821 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		1719A6922B9326D500466821 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		1719A6962B932CF200466821 /* WeatherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResult.swift; sourceTree = "<group>"; };
+		1719A6982B93BC3100466821 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		1719A69A2B93BCBE00466821 /* TestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsViewController.swift; sourceTree = "<group>"; };
+		1719A69E2B93BD1100466821 /* TestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsView.swift; sourceTree = "<group>"; };
+		1719A6A02B93C1C100466821 /* JSONParcing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParcing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +147,7 @@
 		1710DE1B2B90D4B0007739D4 /* MechatronicsComponentsGuide */ = {
 			isa = PBXGroup;
 			children = (
+				1719A69C2B93BCCB00466821 /* Resuorces */,
 				1710DE552B90F3AE007739D4 /* Service */,
 				1710DE502B90DB84007739D4 /* Settings */,
 				1710DE4F2B90DB48007739D4 /* ApplicationConfigurations */,
@@ -176,6 +185,7 @@
 				1710DE6D2B91B940007739D4 /* GeneralView.swift */,
 				1719A6872B924C1200466821 /* CollectionCell.swift */,
 				1719A68D2B9256F100466821 /* ProjectsView.swift */,
+				1719A69E2B93BD1100466821 /* TestsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +198,7 @@
 				1710DE612B91235B007739D4 /* ReferencesViewController.swift */,
 				1710DE6B2B91AD9F007739D4 /* GeneralViewController.swift */,
 				1719A68B2B9255CD00466821 /* ProjectsViewController.swift */,
+				1719A69A2B93BCBE00466821 /* TestsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -227,6 +238,7 @@
 			children = (
 				1719A6952B932C3800466821 /* UserDefaultsService */,
 				1710DE562B90F3B4007739D4 /* NetworkService */,
+				1719A6A02B93C1C100466821 /* JSONParcing.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -234,7 +246,7 @@
 		1710DE562B90F3B4007739D4 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
-				1710DE572B90F3C8007739D4 /* NetworkJSONService.swift */,
+				1710DE572B90F3C8007739D4 /*  NetworkAlamofire.swift */,
 				1710DE5A2B90F3E3007739D4 /* NetworkErrors.swift */,
 				1710DE5C2B910BD7007739D4 /* NetworkImageService.swift */,
 				1719A6962B932CF200466821 /* WeatherResult.swift */,
@@ -256,6 +268,14 @@
 				1719A6922B9326D500466821 /* DataService.swift */,
 			);
 			path = UserDefaultsService;
+			sourceTree = "<group>";
+		};
+		1719A69C2B93BCCB00466821 /* Resuorces */ = {
+			isa = PBXGroup;
+			children = (
+				1719A6982B93BC3100466821 /* data.json */,
+			);
+			path = Resuorces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +394,7 @@
 				1710DE292B90D4B1007739D4 /* LaunchScreen.storyboard in Resources */,
 				1710DE732B91E82F007739D4 /* abosanova.ttf in Resources */,
 				1710DE262B90D4B1007739D4 /* Assets.xcassets in Resources */,
+				1719A6992B93BC3100466821 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +421,9 @@
 			files = (
 				1710DE702B91C986007739D4 /* DataForCollection .swift in Sources */,
 				1719A68C2B9255CD00466821 /* ProjectsViewController.swift in Sources */,
+				1719A6A12B93C1C100466821 /* JSONParcing.swift in Sources */,
 				1710DE212B90D4B0007739D4 /* MainViewController.swift in Sources */,
+				1719A69B2B93BCBE00466821 /* TestsViewController.swift in Sources */,
 				1719A6882B924C1200466821 /* CollectionCell.swift in Sources */,
 				1710DE6C2B91AD9F007739D4 /* GeneralViewController.swift in Sources */,
 				1710DE522B90DBC9007739D4 /* MainView.swift in Sources */,
@@ -413,8 +436,9 @@
 				1710DE5B2B90F3E3007739D4 /* NetworkErrors.swift in Sources */,
 				1710DE1F2B90D4B0007739D4 /* SceneDelegate.swift in Sources */,
 				1710DE622B91235B007739D4 /* ReferencesViewController.swift in Sources */,
+				1719A69F2B93BD1100466821 /* TestsView.swift in Sources */,
 				1719A6932B9326D500466821 /* DataService.swift in Sources */,
-				1710DE582B90F3C8007739D4 /* NetworkJSONService.swift in Sources */,
+				1710DE582B90F3C8007739D4 /*  NetworkAlamofire.swift in Sources */,
 				1710DE5F2B910EF5007739D4 /* InfoView.swift in Sources */,
 				1710DE642B912482007739D4 /* ReferencesView.swift in Sources */,
 				1719A6972B932CF200466821 /* WeatherResult.swift in Sources */,

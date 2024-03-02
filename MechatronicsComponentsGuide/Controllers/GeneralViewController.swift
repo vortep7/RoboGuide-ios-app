@@ -8,7 +8,7 @@ class GeneralViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        generalView.onAddActionSecondButton = {[weak self] in self?.secondAction()}
+        generalView.onAddActionFirstButton = {[weak self] in self?.firstAction()}
         generalView.onAddActionSecondButton = {[weak self] in self?.secondAction()}
         
     }
@@ -17,10 +17,10 @@ class GeneralViewController: UIViewController {
         self.view = GeneralView(frame: UIScreen.main.bounds)
     }
     
-//    @objc func firstAction() {
-//        let nextController =
-//        navigationController?.pushViewController(next, animated: true)
-//    }
+    @objc func firstAction() {
+        let nextController = TestsViewController()
+        navigationController?.pushViewController(nextController, animated: true)
+    }
     
     @objc func secondAction() {
         let nextController = ProjectsViewController()

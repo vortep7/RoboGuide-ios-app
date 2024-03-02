@@ -1,7 +1,7 @@
 import UIKit
 import WebKit
 
-class ReferencesView: UIView {
+final class ReferencesView: UIView {
     
     //MARK: - create Ui elements
     

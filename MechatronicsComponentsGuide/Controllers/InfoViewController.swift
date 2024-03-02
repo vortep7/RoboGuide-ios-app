@@ -1,9 +1,3 @@
-//
-//  InfoViewController.swift
-//  MechatronicsComponentsGuide
-//
-//  Created by Андрей Петров on 29.02.2024.
-//
 
 import UIKit
 
