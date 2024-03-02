@@ -16,10 +16,10 @@ struct Component {
 struct CollectionSource {
     static func createComponents() -> [Component] {
         let arrayOfComponents = [
-            Component(title: "FirstRobot(PROLevel)", review: "Review1", index: 1, price: 100, image: UIImage(named: "one")!),
-            Component(title: "SecondRobor(mediumLevel)", review: "Review1", index: 1, price: 100, image: UIImage(named: "two")!),
-            Component(title: "ThirdRobor(easyLevel)", review: "Review1", index: 1, price: 100, image: UIImage(named: "three")!),
-            Component(title: "LastRobot(mediumLevel", review: "Review1", index: 1, price: 100, image: UIImage(named: "four")!),
+            Component(title: "FirstRobot(PROLevel)", review: VideoReference.one.rawValue, index: 1, price: 100, image: UIImage(named: "one")!),
+            Component(title: "SecondRobor(mediumLevel)", review: VideoReference.two.rawValue, index: 1, price: 100, image: UIImage(named: "two")!),
+            Component(title: "ThirdRobor(easyLevel)", review: VideoReference.three.rawValue, index: 1, price: 100, image: UIImage(named: "three")!),
+            Component(title: "LastRobot(mediumLevel)", review: VideoReference.two.rawValue, index: 1, price: 100, image: UIImage(named: "four")!),
             
         ]
         return arrayOfComponents

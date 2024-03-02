@@ -1,14 +1,9 @@
-//
-//  NetworkService.swift
-//  MechatronicsComponentsGuide
-//
-//  Created by Андрей Петров on 29.02.2024.
-//
-
 import Foundation
+import Alamofire
  
-class NetworkService {
-    static let shared = NetworkService()
+class NetworkAlamofireService {
+    //MARK: - singleton
+    static let shared = NetworkAlamofireService()
     private init() {}
     let decoder = JSONDecoder()
     
@@ -21,16 +16,7 @@ class NetworkService {
         return URL(string: result)
     }
     
-    func fetchData() async throws {
-        guard let url = generateUrl() else
-        {throw NetworkCustomErrors.badURL }
-        
-        do {
-            let response = try await URLSession.shared.data(from: url)
-        } catch {
-            throw NetworkCustomErrors.badResponse
-        }
-//        let data = try decoder.decode(<#T##type: Decodable.Protocol##Decodable.Protocol#>, from: response.0)
+    func fetchData() {
                 
     }
     

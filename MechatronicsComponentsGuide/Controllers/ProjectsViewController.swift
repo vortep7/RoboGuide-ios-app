@@ -13,37 +13,14 @@ class ProjectsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: setupLayout())
-        collectionView.dataSource = self
-        
-        project.addSubview(collectionView)
-        collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "\(CollectionViewCell.self)")
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: project.safeAreaLayoutGuide.topAnchor, constant: 70),
-            collectionView.bottomAnchor.constraint(equalTo: project.safeAreaLayoutGuide.bottomAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: project.safeAreaLayoutGuide.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: project.safeAreaLayoutGuide.trailingAnchor),
-        ])
-        
-        collectionView.layer.cornerRadius = 18
-        let backgroundImage = UIImage(named: "flyRobot")
-        let backgroundImageView = UIImageView(image: backgroundImage)
-        collectionView.backgroundView = backgroundImageView
+        project.collectionView.dataSource = self
+        project.collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "\(CollectionViewCell.self)")
     }
     
-    //MARK: - create special Layout
-    func setupLayout() -> UICollectionViewFlowLayout {
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 350, height: 350)
-        layout.minimumLineSpacing = 60
-        layout.collectionView?.backgroundColor = .blue
-        return layout
-    }
-    
+
     override func loadView() {
         self.view = ProjectsView(frame: UIScreen.main.bounds)
+        
     }
 }
 
@@ -61,7 +38,9 @@ extension ProjectsViewController: UICollectionViewDataSource {
         }
         
         cell.imageView.image = source[indexPath.item].image
-        cell.lable.text = source[indexPath.item].title
+        cell.lableFirst.text = source[indexPath.item].title
+        cell.lableSecond.text = source[indexPath.item].review
+
         
         cell.layer.cornerRadius = 20
         

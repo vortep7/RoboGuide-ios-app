@@ -9,8 +9,9 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
-    var lable = UILabel()
+    var lableFirst = UILabel()
     var imageView = UIImageView()
+    var lableSecond = UILabel()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -19,8 +20,11 @@ class CollectionViewCell: UICollectionViewCell {
     
     //MARK: - parametrs of cell
     func setupCell() {
-        lable.translatesAutoresizingMaskIntoConstraints = false
-        self.contentView.addSubview(lable)
+        lableFirst.translatesAutoresizingMaskIntoConstraints = false
+        self.contentView.addSubview(lableFirst)
+        
+        lableSecond.translatesAutoresizingMaskIntoConstraints = false
+        self.contentView.addSubview(lableSecond)
         
         self.contentView.addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -29,14 +33,19 @@ class CollectionViewCell: UICollectionViewCell {
         
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 40),
-            imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 0),
+            imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -40),
             imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0),
-            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -40)
+            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 0)
         ])
         
         NSLayoutConstraint.activate([
-            lable.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
-            lable.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5)
+            lableFirst.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
+            lableFirst.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5)
+        ])
+        
+        NSLayoutConstraint.activate([
+            lableSecond.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
+            lableSecond.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -2)
         ])
         
     }
