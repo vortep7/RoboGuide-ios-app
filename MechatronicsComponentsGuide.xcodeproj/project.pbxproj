@@ -236,9 +236,9 @@
 		1710DE552B90F3AE007739D4 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				175DDCA42B944D3F003C3C0D /* Parcer */,
 				1719A6952B932C3800466821 /* UserDefaultsService */,
 				1710DE562B90F3B4007739D4 /* NetworkService */,
-				1719A6A02B93C1C100466821 /* JSONParcing.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -276,6 +276,14 @@
 				1719A6982B93BC3100466821 /* data.json */,
 			);
 			path = Resuorces;
+			sourceTree = "<group>";
+		};
+		175DDCA42B944D3F003C3C0D /* Parcer */ = {
+			isa = PBXGroup;
+			children = (
+				1719A6A02B93C1C100466821 /* JSONParcing.swift */,
+			);
+			path = Parcer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

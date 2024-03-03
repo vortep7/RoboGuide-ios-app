@@ -3,11 +3,24 @@ import Foundation
 
 final class TestsView: UIView {
     var onButtonFirstAction: (() ->Void)?
+    
+    var onButtonFirstAnswer: (() ->Void)?
+    var onButtonSecondAnswer: (() ->Void)?
+    var onButtonThirdAnswer: (() ->Void)?
+    var onButtonFourthAnswer: (() ->Void)?
+
     var digit = 1
+    
+    let congrLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.font = UIFont(name: "abosanova", size: 22)
+        return label
+    }()
     
     private let imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named:"magic")
+        imageView.image = UIImage(named:"final")
         return imageView
     }()
     
@@ -68,6 +81,7 @@ final class TestsView: UIView {
     
     private let button:UIButton = {
         let button = UIButton()
+        
         button.setTitle("Next question", for: .normal)
         button.setTitleColor(.blue, for: .normal)
         button.backgroundColor = .white
@@ -75,6 +89,34 @@ final class TestsView: UIView {
         return button
     }()
     
+    let checkButtonFirst: UIButton = {
+        let checkboxButton = UIButton(type: .custom)
+        checkboxButton.setImage(UIImage(named: "unchecked"), for: .normal)
+        checkboxButton.isSelected = false
+        return checkboxButton
+    }()
+    
+    let checkButtonSecond: UIButton = {
+        let checkboxButton = UIButton(type: .custom)
+        checkboxButton.setImage(UIImage(named: "unchecked"), for: .normal)
+        checkboxButton.isSelected = false
+        return checkboxButton
+    }()
+    
+    let checkButtonThird: UIButton = {
+        let checkboxButton = UIButton(type: .custom)
+        checkboxButton.setImage(UIImage(named: "unchecked"), for: .normal)
+        checkboxButton.isSelected = false
+        return checkboxButton
+    }()
+    
+    let checkButtonFourth: UIButton = {
+        let checkboxButton = UIButton(type: .custom)
+        checkboxButton.setImage(UIImage(named: "unchecked"), for: .normal)
+        checkboxButton.isSelected = false
+        return checkboxButton
+    }()
+
     private let hintButton:UIButton = {
         let button = UIButton()
         button.setTitle("Hint", for: .normal)
@@ -83,6 +125,56 @@ final class TestsView: UIView {
         button.layer.cornerRadius = 18
         return button
     }()
+    
+    func constraintsFotCongrLabel() {
+        congrLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            congrLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -190),
+            congrLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 60),
+            congrLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -50),
+        ])
+    }
+    
+    func constraintsFotSecondButton() {
+        checkButtonSecond.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            checkButtonSecond.topAnchor.constraint(equalTo: checkButtonFirst.bottomAnchor, constant: 20),
+            checkButtonSecond.heightAnchor.constraint(equalToConstant: 40),
+            checkButtonSecond.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 320),
+            checkButtonSecond.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
+        ])
+    }
+
+    func constraintsFotThirdButton() {
+        checkButtonThird.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            checkButtonThird.topAnchor.constraint(equalTo: checkButtonSecond.bottomAnchor, constant: 20),
+            checkButtonThird.heightAnchor.constraint(equalToConstant: 40),
+            checkButtonThird.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 320),
+            checkButtonThird.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
+        ])
+    }
+
+    func constraintsFotFourthButton() {
+        checkButtonFourth.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            checkButtonFourth.topAnchor.constraint(equalTo: checkButtonThird.bottomAnchor, constant: 20),
+            checkButtonFourth.heightAnchor.constraint(equalToConstant: 40),
+            checkButtonFourth.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 320),
+            checkButtonFourth.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
+        ])
+    }
+
+    func constraintsFotFirstButton() {
+        checkButtonFirst.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            checkButtonFirst.topAnchor.constraint(equalTo: self.topAnchor, constant: 330),
+            checkButtonFirst.heightAnchor.constraint(equalToConstant: 40),
+            checkButtonFirst.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 320),
+            checkButtonFirst.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
+        ])
+    }
+
     
     func constraintsFotImageView() {
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -208,12 +300,48 @@ final class TestsView: UIView {
         self.addSubview(qualityOfLevel)
     }
     
+    func setupButtons() {
+        self.addSubview(checkButtonFirst)
+        self.addSubview(checkButtonSecond)
+        self.addSubview(checkButtonThird)
+        self.addSubview(checkButtonFourth)
+        self.addSubview(congrLabel)
+
+        constraintsFotFirstButton()
+        constraintsFotSecondButton()
+        constraintsFotThirdButton()
+        constraintsFotFourthButton()
+        constraintsFotCongrLabel()
+    }
+    
     func addAction() {
         button.addTarget(self, action: #selector(onFirstAction), for: .touchUpInside)
+        
+        checkButtonFirst.addTarget(self, action: #selector(checkButtonFirstAction), for: .touchUpInside)
+        checkButtonSecond.addTarget(self, action: #selector(checkButtonSecondAction), for: .touchUpInside)
+        checkButtonThird.addTarget(self, action: #selector(checkButtonThirdAction), for: .touchUpInside)
+        checkButtonFourth.addTarget(self, action: #selector(checkButtonFourthAction), for: .touchUpInside)
+
     }
     
     @objc func onFirstAction() {
         onButtonFirstAction?()
+    }
+    
+    @objc func checkButtonFirstAction() {
+        onButtonFirstAnswer?()
+    }
+    
+    @objc func checkButtonSecondAction() {
+        onButtonSecondAnswer?()
+    }
+    
+    @objc func checkButtonThirdAction() {
+        onButtonThirdAnswer?()
+    }
+    
+    @objc func checkButtonFourthAction() {
+        onButtonFourthAnswer?()
     }
     
     override init(frame: CGRect) {

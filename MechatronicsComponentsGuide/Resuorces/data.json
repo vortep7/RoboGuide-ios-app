@@ -3,37 +3,37 @@
         "text": "What is the main component of a robot?",
         "level": "Easy Level",
         "answers": ["1) CPU", "2) Actuator", "3) Sensor", "4) Battery"],
-        "positiveAnswer": "Actuator"
+        "positiveAnswer": 2
     },
     {
         "text": "What does AI stand for in robotics?",
         "level": "Easy Level",
         "answers": ["1) Artificial Intelligence", "2) Automated Information", "3) Advanced Integration", "4) Assisted Innovation"],
-        "positiveAnswer": "Artificial Intelligence"
+        "positiveAnswer": 1
     },
     {
         "text": "Which programming language is commonly used in robotics?",
         "level": "Medium Level",
         "answers": ["1) Java", "2) Python", "3) C++", "4) JavaScript"],
-        "positiveAnswer": "Python"
+        "positiveAnswer": 2
     },
     {
         "text": "What is the purpose of a PID controller in robotics?",
         "level": "Medium Level",
         "answers": ["1) Power Input Determination", "2) Position Inversion Detector", "3) Proportional Integral Derivative", "4) Precision Interpolation Driver"],
-        "positiveAnswer": "Proportional Integral Derivative"
+        "positiveAnswer": 3
     },
     {
         "text": "What does ROS stand for in robotics?",
         "level": "Hard Level",
         "answers": ["1) Robot Operating System", "2) Real-time Operating System", "3) Remote Observation System", "4) Robotics Object Sharing"],
-        "positiveAnswer": "Robot Operating System"
+        "positiveAnswer": 1
     },
     {
         "text": "What type of sensor is commonly used to detect obstacles in robotics?",
         "level": "Hard Level",
         "answers": ["1) IR Sensor", "2) RFID Reader", "3) Ultrasound Sensor", "4) Photodetector"],
-        "positiveAnswer": "Ultrasound Sensor"
+        "positiveAnswer": 3
     }
 ]
 

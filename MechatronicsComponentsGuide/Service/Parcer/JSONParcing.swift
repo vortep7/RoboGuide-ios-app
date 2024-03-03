@@ -8,7 +8,7 @@ class JSONParcer {
     var arrayOfText = [String]()
     var arrayOfLevel = [String]()
     var arrayOfAnswer = [[String]]()
-    var arrayOfpositiveAnswers = [String]()
+    var arrayOfpositiveAnswers = [Int]()
 
     func fetchData() {
         guard let path = Bundle.main.path(forResource: "data", ofType: "json")
@@ -27,7 +27,7 @@ class JSONParcer {
                 guard let text = questionProperty["text"] as? String else {return}
                 guard let level = questionProperty["level"] as? String else {return}
                 guard let answers = questionProperty["answers"] as? [String] else {return}
-                guard let positiveAnswer = questionProperty["positiveAnswer"] as? String else {return}
+                guard let positiveAnswer = questionProperty["positiveAnswer"] as? Int else {return}
                 
                 arrayOfText.append(text)
                 arrayOfLevel.append(level)
