@@ -40,6 +40,7 @@
 		1719A69B2B93BCBE00466821 /* TestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719A69A2B93BCBE00466821 /* TestsViewController.swift */; };
 		1719A69F2B93BD1100466821 /* TestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719A69E2B93BD1100466821 /* TestsView.swift */; };
 		1719A6A12B93C1C100466821 /* JSONParcing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719A6A02B93C1C100466821 /* JSONParcing.swift */; };
+		175DDCA62B94B14E003C3C0D /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DDCA52B94B14E003C3C0D /* Answers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		1719A69A2B93BCBE00466821 /* TestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsViewController.swift; sourceTree = "<group>"; };
 		1719A69E2B93BD1100466821 /* TestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsView.swift; sourceTree = "<group>"; };
 		1719A6A02B93C1C100466821 /* JSONParcing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParcing.swift; sourceTree = "<group>"; };
+		175DDCA52B94B14E003C3C0D /* Answers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				1710DE672B91261A007739D4 /* DataForCells.swift */,
 				1710DE6F2B91C986007739D4 /* DataForCollection .swift */,
 				1719A6852B92214900466821 /* ReferenceForVideo.swift */,
+				175DDCA52B94B14E003C3C0D /* Answers.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1710DE702B91C986007739D4 /* DataForCollection .swift in Sources */,
+				175DDCA62B94B14E003C3C0D /* Answers.swift in Sources */,
 				1719A68C2B9255CD00466821 /* ProjectsViewController.swift in Sources */,
 				1719A6A12B93C1C100466821 /* JSONParcing.swift in Sources */,
 				1710DE212B90D4B0007739D4 /* MainViewController.swift in Sources */,

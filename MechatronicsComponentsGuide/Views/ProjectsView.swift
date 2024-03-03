@@ -3,13 +3,13 @@ import UIKit
 final class ProjectsView: UIView {
     
     //MARK: - create UI elements
-    let imageView:UIImageView = {
+    private let imageView:UIImageView = {
         let imageView  = UIImageView()
         imageView.image = UIImage(named: "rer")
         return imageView
     }()
     
-    let label: UILabel = {
+    private let label: UILabel = {
         let label = UILabel()
         label.text = "Data base interesting robo-projects"
         label.font = .boldSystemFont(ofSize: 25)
@@ -17,7 +17,7 @@ final class ProjectsView: UIView {
         return label
     }()
     
-    let imageViewMini:UIImageView = {
+    private let imageViewMini:UIImageView = {
         let imageView  = UIImageView()
         imageView.image = UIImage(named: "iftis")
         return imageView

@@ -5,16 +5,21 @@ class TestsViewController: UIViewController {
     
     var count:Int = 1
     var test: TestsView { return self.view as! TestsView}
+    let answer = Answers()
+    var digit = 1
+    var counter = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        JSONParcer.shared.fetchData()
         
         test.onButtonFirstAction = {[weak self] in self?.actionForButton()}
-        
         test.onButtonFirstAnswer = {[weak self] in self?.actionFirst()}
         test.onButtonSecondAnswer = {[weak self] in self?.actionSecond()}
         test.onButtonThirdAnswer = {[weak self] in self?.actionThird()}
         test.onButtonFourthAnswer = {[weak self] in self?.actionFourth()}
+        
+        counter = UserDefaults.standard.value(forKey: "counter") as! Int
 
     }
     
@@ -22,55 +27,43 @@ class TestsViewController: UIViewController {
         self.view = TestsView(frame: UIScreen.main.bounds)
     }
     
+    //MARK: - action for button
     @objc func actionFirst() {
-        test.checkButtonFirst.setImage(UIImage(named: "yes"), for: .normal)
+        test.setupTrueImageFirst()
         count = 1000
-        answer()
+        positiveAnswer()
     }
     
     @objc func actionSecond() {
-        test.checkButtonSecond.setImage(UIImage(named: "yes"), for: .normal)
+        test.setupTrueImageSecond()
         count = 2000
-        answer()
+        positiveAnswer()
     }
     
     @objc func actionThird() {
-        test.checkButtonThird.setImage(UIImage(named: "yes"), for: .normal)
+        test.setupTrueImageThird()
         count = 3000
-        answer()
+        positiveAnswer()
     }
     
     @objc func actionFourth() {
-        test.checkButtonFourth.setImage(UIImage(named: "yes"), for: .normal)
+        test.setupTrueImageFourth()
         count = 4000
-        answer()
+        positiveAnswer()
     }
     
+    //MARK: - change question
     @objc func actionForButton() {
-        if test.digit < 5 {
-            test.digit += 1
-            JSONParcer.shared.fetchData()
-            
-            test.label.text = JSONParcer.shared.arrayOfText[test.digit]
-            
-            test.firstAnswer.text = JSONParcer.shared.arrayOfAnswer[test.digit][0]
-            test.secondAnswer.text = JSONParcer.shared.arrayOfAnswer[test.digit][1]
-            test.thirdAnswer.text = JSONParcer.shared.arrayOfAnswer[test.digit][2]
-            test.fouthrAnswer.text = JSONParcer.shared.arrayOfAnswer[test.digit][3]
-            
-            test.qualityOfLevel.text = JSONParcer.shared.arrayOfLevel[test.digit]
-            
-            returnImage()
+        if digit < 5 {
+            digit += 1
+            test.changeQuestion(digit)
+            test.returnImage()
             addButton()
             count = 1
         } else {
-            test.digit = 0
-            test.label.text = JSONParcer.shared.arrayOfText[test.digit]
-            test.firstAnswer.text = JSONParcer.shared.arrayOfAnswer[test.digit][0]
-            test.secondAnswer.text = JSONParcer.shared.arrayOfAnswer[test.digit][1]
-            test.thirdAnswer.text = JSONParcer.shared.arrayOfAnswer[test.digit][2]
-            test.fouthrAnswer.text = JSONParcer.shared.arrayOfAnswer[test.digit][3]
-            returnImage()
+            digit = 0
+            test.changeQuestion(digit)
+            test.returnImage()
             count = 1
         }
     }
@@ -83,35 +76,17 @@ extension TestsViewController {
 }
 
 extension TestsViewController {
-    func returnImage() {
-        test.checkButtonFirst.setImage(UIImage(named: "unchecked"), for: .normal)
-        test.checkButtonSecond.setImage(UIImage(named: "unchecked"), for: .normal)
-        test.checkButtonThird.setImage(UIImage(named: "unchecked"), for: .normal)
-        test.checkButtonFourth.setImage(UIImage(named: "unchecked"), for: .normal)
-    }
-}
-
-extension TestsViewController {
-    func answer(){
-        var myAnswer = 0
-        switch count {
-        case 1000:
-            myAnswer = 1
-        case 2000:
-            myAnswer = 2
-        case 3000:
-            myAnswer = 3
-        case 4000:
-            myAnswer = 4
-        default:
-            myAnswer = 999
-        }
-        
-        let indexOfPositiveAnswer = JSONParcer.shared.arrayOfpositiveAnswers[test.digit]
+    func positiveAnswer(){
+        var myAnswer = 1
+        answer.checkPositiveAnswer(count, &myAnswer)
+        let indexOfPositiveAnswer = JSONParcer.shared.arrayOfpositiveAnswers[digit]
         if indexOfPositiveAnswer == myAnswer {
-            test.congrLabel.text = "Well done! Right answer!"
+            test.changeText(1)
+            counter += 1
+            UserDefaults.standard.setValue(counter, forKey: "counter")
+            test.changeDigit(counter)
         } else {
-            test.congrLabel.text = "The answer is wrong"
+            test.changeText(2)
         }
     }
 }

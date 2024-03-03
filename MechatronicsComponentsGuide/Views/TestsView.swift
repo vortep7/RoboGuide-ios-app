@@ -2,16 +2,23 @@ import UIKit
 import Foundation
 
 final class TestsView: UIView {
-    var onButtonFirstAction: (() ->Void)?
     
+    //MARK: - create clouser for button action (use in controller)
+    var onButtonFirstAction: (() ->Void)?
     var onButtonFirstAnswer: (() ->Void)?
     var onButtonSecondAnswer: (() ->Void)?
     var onButtonThirdAnswer: (() ->Void)?
     var onButtonFourthAnswer: (() ->Void)?
-
-    var digit = 1
     
-    let congrLabel: UILabel = {
+    //MARK: - create UI elements
+    private let congrLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.font = UIFont(name: "abosanova", size: 22)
+        return label
+    }()
+    
+    private let digitLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
         label.font = UIFont(name: "abosanova", size: 22)
@@ -34,7 +41,7 @@ final class TestsView: UIView {
         return imageView
     }()
     
-    let label: UILabel = {
+    private let label: UILabel = {
         let label = UILabel()
         label.text = Words.firstLabel.rawValue
         label.font = .boldSystemFont(ofSize: 24)
@@ -43,37 +50,36 @@ final class TestsView: UIView {
     }()
     
     //MARK: - create answers
-    var firstAnswer: UILabel = {
+    private var firstAnswer: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 18)
         label.textColor = .orange
         return label
     }()
     
-    var secondAnswer: UILabel = {
+    private var secondAnswer: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 18)
         label.textColor = .orange
         return label
     }()
     
-    var thirdAnswer: UILabel = {
+    private var thirdAnswer: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 18)
         label.textColor = .orange
         return label
     }()
     
-    var fouthrAnswer: UILabel = {
+    private var fouthrAnswer: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 18)
         label.textColor = .orange
         return label
     }()
     
-    var qualityOfLevel: UILabel = {
+    private var qualityOfLevel: UILabel = {
         let label = UILabel()
-//        label.font = .boldSystemFont(ofSize: 32)
         label.font = UIFont(name: "abosanova", size: 35)
         label.textColor = .white
         return label
@@ -89,28 +95,28 @@ final class TestsView: UIView {
         return button
     }()
     
-    let checkButtonFirst: UIButton = {
+    private let checkButtonFirst: UIButton = {
         let checkboxButton = UIButton(type: .custom)
         checkboxButton.setImage(UIImage(named: "unchecked"), for: .normal)
         checkboxButton.isSelected = false
         return checkboxButton
     }()
     
-    let checkButtonSecond: UIButton = {
+    private let checkButtonSecond: UIButton = {
         let checkboxButton = UIButton(type: .custom)
         checkboxButton.setImage(UIImage(named: "unchecked"), for: .normal)
         checkboxButton.isSelected = false
         return checkboxButton
     }()
     
-    let checkButtonThird: UIButton = {
+    private let checkButtonThird: UIButton = {
         let checkboxButton = UIButton(type: .custom)
         checkboxButton.setImage(UIImage(named: "unchecked"), for: .normal)
         checkboxButton.isSelected = false
         return checkboxButton
     }()
     
-    let checkButtonFourth: UIButton = {
+    private let checkButtonFourth: UIButton = {
         let checkboxButton = UIButton(type: .custom)
         checkboxButton.setImage(UIImage(named: "unchecked"), for: .normal)
         checkboxButton.isSelected = false
@@ -126,6 +132,7 @@ final class TestsView: UIView {
         return button
     }()
     
+    //MARK: - create UI consrtaints
     func constraintsFotCongrLabel() {
         congrLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -189,10 +196,20 @@ final class TestsView: UIView {
     func constraintsFotQualityOfLevel() {
         qualityOfLevel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            qualityOfLevel.topAnchor.constraint(equalTo: self.topAnchor, constant: 80),
-            qualityOfLevel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -650),
+            qualityOfLevel.topAnchor.constraint(equalTo: self.topAnchor, constant: 110),
+            qualityOfLevel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -640),
             qualityOfLevel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 70),
             qualityOfLevel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -70),
+        ])
+    }
+    
+    func constraintsForDigitLabel() {
+        digitLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            digitLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 50),
+            digitLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -680),
+            digitLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
+            digitLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
         ])
     }
     
@@ -285,8 +302,10 @@ final class TestsView: UIView {
         constraintsForFouthrAnswer()
         constraintsFotHintButton()
         constraintsFotQualityOfLevel()
+        constraintsForDigitLabel()
     }
-    
+        
+    //MARK: - add views
     func addViews() {
         self.addSubview(imageView)
         self.addSubview(imageViewMini)
@@ -298,6 +317,7 @@ final class TestsView: UIView {
         self.addSubview(fouthrAnswer)
         self.addSubview(hintButton)
         self.addSubview(qualityOfLevel)
+        self.addSubview(digitLabel)
     }
     
     func setupButtons() {
@@ -314,6 +334,30 @@ final class TestsView: UIView {
         constraintsFotCongrLabel()
     }
     
+    
+    //MARK: - change question
+    func changeQuestion(_ digit:Int) {
+        label.text = JSONParcer.shared.arrayOfText[digit]
+        
+        firstAnswer.text = JSONParcer.shared.arrayOfAnswer[digit][0]
+        secondAnswer.text = JSONParcer.shared.arrayOfAnswer[digit][1]
+        thirdAnswer.text = JSONParcer.shared.arrayOfAnswer[digit][2]
+        fouthrAnswer.text = JSONParcer.shared.arrayOfAnswer[digit][3]
+        qualityOfLevel.text = JSONParcer.shared.arrayOfLevel[digit]
+    }
+    
+    //MARK: - change text of label
+    func changeText(_ result:Int) {
+        switch result {
+        case 1: congrLabel.text = Words.trueAnswer.rawValue
+        case 2: congrLabel.text = Words.falseAnswer.rawValue
+        default:
+            congrLabel.text = Words.falseAnswer.rawValue
+        }
+    }
+    
+    
+    //MARK: - action for button
     func addAction() {
         button.addTarget(self, action: #selector(onFirstAction), for: .touchUpInside)
         
@@ -344,6 +388,37 @@ final class TestsView: UIView {
         onButtonFourthAnswer?()
     }
     
+    //MARK: - work with button image
+    func returnImage() {
+        checkButtonFirst.setImage(UIImage(named: "unchecked"), for: .normal)
+        checkButtonSecond.setImage(UIImage(named: "unchecked"), for: .normal)
+        checkButtonThird.setImage(UIImage(named: "unchecked"), for: .normal)
+        checkButtonFourth.setImage(UIImage(named: "unchecked"), for: .normal)
+    }
+    
+    func setupTrueImageFirst() {
+        checkButtonFirst.setImage(UIImage(named: "yes"), for: .normal)
+    }
+    
+    func setupTrueImageSecond() {
+        checkButtonSecond.setImage(UIImage(named: "yes"), for: .normal)
+    }
+    
+    func setupTrueImageThird() {
+        checkButtonThird.setImage(UIImage(named: "yes"), for: .normal)
+    }
+    
+    func setupTrueImageFourth() {
+        checkButtonFourth.setImage(UIImage(named: "yes"), for: .normal)
+    }
+    
+    //MARK: - change digit of label
+    func changeDigit(_ digit:Int) {
+        
+        digitLabel.text = "Numbers of true answers: \(Int(digit))"
+    }
+    
+    //MARK: - init
     override init(frame: CGRect) {
         super.init(frame: frame)
 
@@ -358,6 +433,9 @@ final class TestsView: UIView {
     
 }
 
+//MARK: - words enum 
 enum Words: String {
     case firstLabel = "This is funny RoboTest! Choose the correct answer from among the suggested ones. Points are awarded for correct answers. Good luck, young roboticist!"
+    case trueAnswer = "Well done! Right answer!"
+    case falseAnswer = "The answer is wrong"
 }

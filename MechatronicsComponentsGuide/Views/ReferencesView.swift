@@ -16,7 +16,7 @@ final class ReferencesView: UIView {
         return imageViwe
     }()
     
-    var tableView: UITableView = {
+    let tableView: UITableView = {
         let tableView = UITableView()
         tableView.layer.cornerRadius = 25
         tableView.layer.borderWidth = 2.0 
