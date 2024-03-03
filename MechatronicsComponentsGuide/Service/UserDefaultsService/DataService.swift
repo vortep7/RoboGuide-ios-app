@@ -6,7 +6,6 @@ protocol UserDefaultManagerProtocol {
     func set(_ object: Any?, forKey key: DataManager.Keys)
     func int(_ key: DataManager.Keys) -> Int?
     func string(_ key: DataManager.Keys) -> String?
-    func bool(_ key: DataManager.Keys) -> Bool?
     func date(_ key: DataManager.Keys) -> Date?
 }
 
@@ -34,10 +33,6 @@ extension DataManager:UserDefaultManagerProtocol {
     
     func string(_ key: Keys) -> String? {
         restore(forKey: key.rawValue) as? String
-    }
-    
-    func bool(_ key: Keys) -> Bool? {
-        restore(forKey: key.rawValue) as? Bool
     }
     
     func date(_ key: Keys) -> Date? {
