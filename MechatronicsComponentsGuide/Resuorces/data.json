@@ -1,38 +1,38 @@
 [
     {
         "text": "What is the main component of a robot?",
-        "level": "Easy",
-        "answers": ["CPU", "Actuator", "Sensor", "Battery"],
+        "level": "Easy Level",
+        "answers": ["1) CPU", "2) Actuator", "3) Sensor", "4) Battery"],
         "positiveAnswer": "Actuator"
     },
     {
         "text": "What does AI stand for in robotics?",
-        "level": "Easy",
-        "answers": ["Artificial Intelligence", "Automated Information", "Advanced Integration", "Assisted Innovation"],
+        "level": "Easy Level",
+        "answers": ["1) Artificial Intelligence", "2) Automated Information", "3) Advanced Integration", "4) Assisted Innovation"],
         "positiveAnswer": "Artificial Intelligence"
     },
     {
         "text": "Which programming language is commonly used in robotics?",
-        "level": "Medium",
-        "answers": ["Java", "Python", "C++", "JavaScript"],
+        "level": "Medium Level",
+        "answers": ["1) Java", "2) Python", "3) C++", "4) JavaScript"],
         "positiveAnswer": "Python"
     },
     {
         "text": "What is the purpose of a PID controller in robotics?",
-        "level": "Medium",
-        "answers": ["Power Input Determination", "Position Inversion Detector", "Proportional Integral Derivative", "Precision Interpolation Driver"],
+        "level": "Medium Level",
+        "answers": ["1) Power Input Determination", "2) Position Inversion Detector", "3) Proportional Integral Derivative", "4) Precision Interpolation Driver"],
         "positiveAnswer": "Proportional Integral Derivative"
     },
     {
         "text": "What does ROS stand for in robotics?",
-        "level": "Hard",
-        "answers": ["Robot Operating System", "Real-time Operating System", "Remote Observation System", "Robotics Object Sharing"],
+        "level": "Hard Level",
+        "answers": ["1) Robot Operating System", "2) Real-time Operating System", "3) Remote Observation System", "4) Robotics Object Sharing"],
         "positiveAnswer": "Robot Operating System"
     },
     {
         "text": "What type of sensor is commonly used to detect obstacles in robotics?",
-        "level": "Hard",
-        "answers": ["IR Sensor", "RFID Reader", "Ultrasound Sensor", "Photodetector"],
+        "level": "Hard Level",
+        "answers": ["1) IR Sensor", "2) RFID Reader", "3) Ultrasound Sensor", "4) Photodetector"],
         "positiveAnswer": "Ultrasound Sensor"
     }
 ]
