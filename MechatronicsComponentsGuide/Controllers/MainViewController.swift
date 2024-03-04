@@ -10,8 +10,6 @@ final class MainViewController: UIViewController {
         mainView.onButtonFirstAction = { [weak self] in self?.actionForFirstButton()}
         mainView.onButtonSecondAction = { [weak self] in self?.actionForSecondButton()}
         mainView.onButtonThirdAction = { [weak self] in self?.actionForThirdButton()}
-        
-
     }
     
     override func loadView() {

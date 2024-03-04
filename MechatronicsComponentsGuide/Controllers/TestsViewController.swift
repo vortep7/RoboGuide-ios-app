@@ -8,6 +8,8 @@ class TestsViewController: UIViewController {
     let answer = Answers()
     var digit = 1
     var counter = 0
+    let dataService:UserDefaultManagerProtocol = DataManager()
+    let key = DataManager.Keys(rawValue: "counter")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +21,7 @@ class TestsViewController: UIViewController {
         test.onButtonThirdAnswer = {[weak self] in self?.actionThird()}
         test.onButtonFourthAnswer = {[weak self] in self?.actionFourth()}
         
-        counter = UserDefaults.standard.value(forKey: "counter") as! Int
+        counter = dataService.int(.counterText)!
 
     }
     
@@ -83,7 +85,7 @@ extension TestsViewController {
         if indexOfPositiveAnswer == myAnswer {
             test.changeText(1)
             counter += 1
-            UserDefaults.standard.setValue(counter, forKey: "counter")
+            dataService.set(counter, forKey: .counterText)
             test.changeDigit(counter)
         } else {
             test.changeText(2)

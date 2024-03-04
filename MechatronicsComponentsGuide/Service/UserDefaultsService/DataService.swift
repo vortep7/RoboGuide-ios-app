@@ -1,7 +1,7 @@
 
 import Foundation
 
-//MARK: - general UserDefault protocol
+//MARK: - general UserDefault protocol (CRUT principle)
 protocol UserDefaultManagerProtocol {
     func set(_ object: Any?, forKey key: DataManager.Keys)
     func int(_ key: DataManager.Keys) -> Int?
@@ -11,11 +11,12 @@ protocol UserDefaultManagerProtocol {
 
 class DataManager {
     public enum Keys: String {
-        case test
+        case counterText
     }
     
     private let userDefaults = UserDefaults.standard
     
+    //MARK: - create ptivate methods 
     private func store(_ object: Any?, key: String) {
         userDefaults.set(object, forKey: key)
     }
