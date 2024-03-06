@@ -62,10 +62,18 @@ This app contains:
 ## The MVC pattern was also used in this project:
 
 <br>
+### View:
+<img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/viewScreen.png" width="500" height="570"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
-<img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/viewScreen.png" width="500" height="570"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/controllerScreen.png" width="600" height="570">
+
+<br>
 
 
+
+<br>
+
+### Controller:
+<img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/controllerScreen.png" width="400" height="300">
 
 
 <br>
