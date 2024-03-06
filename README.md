@@ -36,6 +36,7 @@ This app contains:
 * Test with questions of varying difficulty + ongoing learning progress
 * Information about the creator
 
+---
 
 ### Tests cover various levels of difficulty and are particularly beneficial for beginners, providing them with valuable insights into the field of robotics."
 
