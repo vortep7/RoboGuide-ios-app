@@ -63,7 +63,7 @@ This app contains:
 
 <br>
 
-<img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/viewScreen.png" width="400" height="450"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/controllerScreen.png" width="400" height="450">
+<img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/viewScreen.png" width="420" height="500"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/controllerScreen.png" width="400" height="450">
 
 
 
