@@ -40,6 +40,11 @@ This app contains:
 
 ### Tests cover various levels of difficulty and are particularly beneficial for beginners, providing them with valuable insights into the field of robotics."
 
+<p float="left">
+  <img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/testFirstScreen.jpg" width="300" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/testSecondScreen.jpg" width="300" /> 
+</p>
 
 
 ## Future features
