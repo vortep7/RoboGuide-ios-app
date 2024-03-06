@@ -22,9 +22,9 @@ This app contains:
 <br>
 
 <p float="left">
-  <img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/menuScreen.jpg" width="400" />
+  <img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/menuScreen.jpg" width="350" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/referenceScreen.jpg" width="400" /> 
+  <img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/referenceScreen.jpg" width="350" /> 
 </p>
 
 
