@@ -6,7 +6,8 @@
 
 <br>
 
-![Image alt](https://github.com/vortep7/RoboGuide-ios-app/blob/main/Лого%20роботик%20.png
+![roboLogo](https://github.com/vortep7/RoboGuide-ios-app/blob/main/Лого%20роботик%20.png
+
 <br>
 
 ### Mechatronics App
