@@ -72,7 +72,7 @@ This app contains:
 <br>
 
 ### Controller:
-<img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/controllerScreen.png" width="500" height="450">
+<img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/controllerScreen.png" width="560" height="450">
 
 
 <br>
