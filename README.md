@@ -5,7 +5,7 @@
 
 ### "RoboGuide" is a fantastic app for robotics enthusiasts. It offers a wealth of information on robotics, including updates on the latest advancements and engaging quizzes to test your knowledge. Whether you're a beginner or an expert, "RoboGuide" is a must-have tool for staying informed and engaged in the field of robotics.
 
-![Логотип робота](https://github.com/vortep7/RoboGuide-ios-app/blob/main/ImageApp/LogoRobo.png)
+![Логотип робота](https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/roboLogo.png)
 
 ### Mechatronics App
 
