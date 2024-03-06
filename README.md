@@ -21,7 +21,7 @@ This app contains:
 
 <br>
 
-![Изображение 1](https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/menuScreen.jpg) ![Изображение 2](https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/referenceScreen.jpg)
+<img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/menuScreen.jpg" width="200" height="200"> <img src="https://github.com/vortep7/RoboGuide-ios-app/raw/main/ImageApp/referenceScreen.jpg" width="200" height="200">
 
 
 <br>
