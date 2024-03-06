@@ -37,6 +37,10 @@ This app contains:
 * Information about the creator
 
 
+### Tests cover various levels of difficulty and are particularly beneficial for beginners, providing them with valuable insights into the field of robotics."
+
+
+
 ## Future features
 
 * A database containing the most sought-after components necessary for building robots.
